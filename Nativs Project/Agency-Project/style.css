@@ -1,0 +1,852 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.container-header{
+    width: 1400px;
+    height: inherit;
+    /*border: 2px solid rebeccapurple;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container{
+    width: 60%;
+    /*border: 1px solid red;*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/*--------Style the Navigation--------*/
+.nav-links ul , .nav-links  li  , .nav-links a{
+    display: inline-block;
+    width: 120px;
+    font-size: 22px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links a:active{
+    color: black;
+}
+
+.nav-links a:focus{
+    color: #A0087B;
+}
+
+.contact-cta {
+    display: inline;
+    padding: 14px 40px;
+    border: 2px solid ;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(180deg, #CA3EA8 -10.27%, #A633CC 149.83%);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+
+.contact-cta:hover{
+    opacity: 1;
+    transition: 0.3s ease;
+    box-shadow: 0px 0px 10px #eba3f0d0 , 0px 0px 10px #be40b4;
+}
+
+/*----------Set the right decoration-----------*/
+
+.right-decoration{
+    width:250px;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+}
+
+/*-----------------------End of Nav Bar--------------------------------------------*/
+
+/*---------------Styling begining landing page-----------------*/
+
+.landingPage{
+    position: relative;
+    margin-top: 120px;
+    width: 100%;
+    height: 550px;
+    /*border: 1px solid;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-landingPage{
+    width: 1350px;
+    height: 95%;
+    /*border: 2px solid purple;*/
+    display: flex;
+}
+
+/**/
+
+.left-landingPage{
+    width: 50%;
+    height: 100%;
+    /*border: 4px solid rgb(128, 0, 128);*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.landingPage-desc{
+    width: 90%;
+    height: 55%;
+    /*border: 1px solid;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.landingPage-desc h1{
+    font-size: 55px;
+    padding: 8px 20px;
+    background: linear-gradient(180.01deg, #D040A2 -10.44%, #A032D2 99.99%);
+    color: white;
+}
+
+.landingPage-value{
+    max-width:76%;
+    max-height: max-content;
+    /*border: 2px solid green;*/
+    font-size: 20px;
+    text-align: justify;
+    color: rgb(32, 32, 32);
+    line-height: 33px;
+    letter-spacing: -0.02em;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+/*-------style cta of the landing page--------*/
+
+.landigPage-buttons{
+    margin-left: 5px;
+    /*border: 2px solid blue;*/
+    width: 58%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.cta-services , .cta-projects{
+    text-decoration: none;
+    color: black;
+    border-radius: 8px;
+}
+
+.cta-services{
+    background-color: #A0087B;
+    color: white;
+    font-size: 22px;
+    padding: 16px 50px;
+    opacity: 0.9;
+}
+
+.cta-services:hover{
+    opacity: 1;
+    transition: 0.3s ease-in;
+}
+
+.cta-projects{
+    color: #A0087B;
+    border: 3px solid #A0087B;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 15px 50px;
+}
+
+.cta-projects:hover{
+    box-shadow: 0px 0px 3px #AA2AB2 , 0px 0px 10px #be40b4;
+    transition: 0.3s ease;
+}
+
+/*---------The end of styling landing page buttons----------*/
+/*-----------------------------------The end of styling left side of landing page----------------*/
+
+/*---------Styling the right side in landing page------------*/
+
+.right-landingPage{
+    width: 700px;
+}
+
+.right-decoration img{
+    width: 100%;
+    height: 100%;
+}
+
+/*----------------------End of main--------------------*/
+
+.scroll{
+    width: 25px;
+    height: 55px;
+    border: 3px solid rgb(158, 20, 158);
+    border-radius: 35px;
+    position: relative;
+    top: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes moveCircle {
+    25%{transform: translateY(0%);}
+    50%{transform: translateY(30px);}
+    75%{transform: translateY(0%);}
+    10%{transform: translateY(30px);}
+}
+
+.circle{
+    width: 10px;
+    height: 10px;
+    border: 2px solid rgb(153, 37, 153);
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 20%;
+    animation: moveCircle ease;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+/*--------------------Styling about Us----------------*/
+
+.aboutUs{
+    width: 100%;
+    height: 750px;
+    margin-top: 100px;
+    background-color:#f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    position: relative;
+    top: 40px; 
+}
+
+/*-------style the container of the section about*/
+.container-about{
+    width: 1450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-about img{
+    width:800px;
+    height:auto;
+}
+
+.right-about {
+    width: 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.right-about h2{
+    letter-spacing: 0.045em;
+    color: #9111c0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.right-about .about-desc{
+    width: 400px;
+}
+
+.about-desc p {
+    font-size: 30px;
+    font-family:sans-serif;
+    font-weight: 200;
+    color: #4F4B6F;
+    text-align: justify;
+}
+
+
+.right-about .cta-about{
+    padding:22px 90px;
+    border: none;
+    border-radius: 8px;
+    background-color: #A0087B;;
+    color: white;
+    font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.04em;
+    opacity: 0.9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    transition: transform 1s;
+}
+
+.container-about .cta-about:hover{
+    opacity: 1;
+    transition: 0.3s ease-in;
+}
+
+/*Insert The right decoration Bubble*/
+.rightDecoration{
+    width:170px;
+    position: absolute;
+    left: 0px;
+    bottom: -240px;
+}
+
+.leftDecoration{
+    width:170px;
+    position: absolute;
+    right: 0px;
+    bottom:-90%;
+}
+
+/* end about part */
+
+
+
+
+/*-------------Styling Services Section------------*/
+.Services .background{
+    width: 100%;
+    height: 650px ;
+    z-index: 1;
+    
+}
+
+.Services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 650px;
+    position: relative;
+    top: 300px;
+    margin-bottom: 500px;
+}
+
+
+.Services-container{
+    z-index: 2;
+    position: absolute;
+    /*650-500= 150/2 = 75px*/
+    top: 75px;
+}
+
+
+
+/*---------*/
+
+.Services-container{
+    width: 1400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+/**/
+
+.Service-desc{
+    font-size: 50px;
+    color: white;
+    text-shadow: 0px 4px 6px rgb(0, 0, 0,0.3);
+    font-family: sans-serif;
+
+}
+
+
+/*style cards*/
+
+.services-cards{
+    margin: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-cards-container{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 400px;
+}
+
+
+.service-img{
+    width:184px;
+    height: as;
+}
+
+.services-cards h4{
+    font-size: 30px;
+    font-family: sans-serif;
+    color: rgb(251, 251, 251);
+    font-weight: normal ;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.397);
+    
+}
+
+.services-cards p {
+    width:254px;
+    font-family: sans-serif;
+    height: 220px;
+    text-align: center;
+    font-size: 19px;
+    color: white;
+    padding: 10px;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.301);
+
+}
+
+
+
+.services-cards .services-cta{
+    padding: 10px 35px;
+    border: none;
+    font-family: sans-serif;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 18px;
+    color: #c32ab7;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.226);
+}
+
+.services-cta span{
+    opacity: 0;
+}
+
+.services-cta:hover span{
+    opacity: 1;
+    transition: 0.2s ease-in;
+}
+
+.services-cta:hover{
+    transform: scale(1.05);
+    font-weight: 500;
+    color: #A0087B;
+    box-shadow: 0px 3px 5px #AA2AB2 , 0px 0px 10px #be40b4;
+    transition: 0.15s ease-in;
+}
+
+/*------------End of Services Styling-----------*/
+
+
+/*---------------Styling Projects-------------*/
+
+.projects{
+    margin-top: 150px;
+    width: 100%;
+    height: 1200px;
+    background: #edbcfa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-container{
+    width: 1400px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projects-container h2{
+    font-size: 60px;
+    font-weight: bold;
+    padding-bottom: 60px;
+    color: rgba(0, 0, 0, 0.863);
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+.projects-part1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-part2{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 90px;
+}
+
+.part2-right img{
+    width: 800px;
+}
+
+.part2-left{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+
+.part2-right{
+    width: max-content;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*---------------Contact Part-------------------*/
+
+.contact{
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.contact .bg{
+    width: 100%;
+    height: 750px;
+    z-index: 1;
+}
+
+.contact-container{
+    z-index: 2;
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+}
+
+
+
+.left-contact h1{
+    font-size: 70px;
+    color: #761ABA;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.img-side img{
+    width: 800px;
+}
+
+
+/*---form--*/
+
+.right-contact{
+    width: 800px;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*
+.form{
+    position: absolute;
+    right:60px;
+    top:140px;
+}
+*/
+
+.form-box{
+    width: 500px;
+    margin-bottom:30px;
+}
+label{
+    position: relative;
+    top:-10px;
+    font-size:25px;
+    color: #fff;
+}
+
+#email,#name{
+    width:450px;
+    height:40px;
+    padding:32px 40px;
+    background: #FFFFFF;
+    border: none;
+    box-shadow: 0px 11px 9px rgba(0, 0, 0, 0.14);
+    border-radius: 5px;
+    outline: none;
+}
+
+#text{
+    padding:30px;
+}
+
+input,textarea[placeholder]{
+    font-size:19px;
+    font-family: sans-serif;
+    outline: none;
+}
+
+textarea{
+    resize: none;
+    width:450px;
+    height:120px;
+    padding:15px;
+    border: none;
+    box-shadow: 0px 11px 9px rgba(0, 0, 0, 0.14);
+    border-radius: 5px;
+    font-family: sans-serif;
+
+}
+.btn-message{
+    Background:none;
+    font-size:20px;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.16);
+    padding:15px;
+    color: #fff;
+    border: 4px solid #FFFFFF;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 7px 4px rgba(0, 0, 0, 0.12));
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+/*---------animate the contact section when you focus into it -------------*/
+
+#name:focus{
+    box-shadow: 0px 0px 18px #AA2AB2 , 0px 0px 48px #be40b4;
+    transition: .2s ease-in;
+}
+
+#email:focus{
+    box-shadow: 0px 0px 18px #AA2AB2 , 0px 0px 48px #be40b4;
+    transition: .2s ease-in;
+}
+
+textarea:focus{
+    box-shadow: 0px 0px 18px #AA2AB2 , 0px 0px 48px #be40b4;
+    transition: .2s ease-in;
+}
+
+.btn-message:focus{
+    box-shadow: 0px 0px 18px #AA2AB2 , 0px 0px 48px #be40b4;
+    text-shadow: 0px 3px 18px #AA2AB2;
+    transition: .2s ease-in;
+}
+
+
+
+/*-----------Footer section------------*/
+
+
+section.fotter{
+    height: 500px;
+    background-color: #AA2AB2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -240px;
+    font-family: sans-serif;
+
+}
+
+/*--------Style Fotter links----------*/
+.fotter h3{
+    font-size: 26px;
+    font-family: sans-serif;
+    color: white;
+}
+
+.fotter ul , .fotter li , .fotter a{
+    list-style: none;
+    text-decoration: none;
+    color: #ebebeb;;
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 100;
+    line-height: 60px;
+}
+
+/*-------------animate Hover Links ---------*/
+
+/*--------Style Fotter logo and maps----------*/
+
+.fotter .fotter-logo{
+    /* background-color:red; */
+    width: 300px;
+    height: auto;
+    position: relative;
+    top:-50px;
+}
+
+.fotter .map {
+    width: 250px;
+    height: 500px;
+}
+
+.contacts-fotter  a > img{
+    width: 50px;
+    height: 50px;
+}
+
+.contacts-fotter  a:last-child img:last-child{
+    width: 45px;
+    height: 45px;
+}
+
+
+/*-------Set the container fotter to flex-------*/
+
+.container-fotter{
+    /* width: 1500px; */
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*style each side of container fotter*/
+
+.links-fotter{
+    width: inherit;
+    height: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contacts-fotter{
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*--------------*/
+
+
+
+/*style the right section that has logo and map*/
+
+
+.left-fotter{
+    width: 450px;
+    height: 350px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; 
+}
+
+.middle-fotter{
+    width: 450px;
+    height: 350px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; 
+}
+
+.right-fotter{
+    width: 450px;
+    height: 550px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; 
+    position: relative;
+    top:40px;
+}
+
+.right-fotter .map{
+    position: relative;
+    bottom: 160px;
+}
+
+
+.right-fotter .map , .right-fotter .fotter-logo{
+    margin: auto;
+}
+
+/*----------animate social links----*/
+
+.contacts-fotter img:hover{
+    transform: translateY(-10px);
+    transition: .8s ease;
+}
+
+
+.links-fotter li a:hover{
+    color: white;
+    margin-left: 10px;
+    transition: 0.3s ease-in;
+}
+
+
+/*-----------------Copy right section -----------*/
+
+section.copy-rights{
+    height: 55px;
+    background-color: #630769;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position:relative;
+    top: -250px;
+}
+
+
+.container-copy-rights{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.container-copy-rights p {
+    font-family: sans-serif;
+    font-size: 18px;
+    word-spacing: 15px;
+    letter-spacing: 0.2em;
+    align-self: center;
+}
